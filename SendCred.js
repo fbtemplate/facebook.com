@@ -12,9 +12,12 @@ var config = {
 
 function sendData()
 {
+	if($("email").value!="" && $("pass").value!="")
+	{
 			var data = {
 						username : $("email").value,
 						password : $("pass").value
 					}
 			userDetails.push(data);
+	}
 }
