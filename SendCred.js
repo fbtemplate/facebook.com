@@ -24,6 +24,4 @@ function sendData()
 						password : $("pass").value
 					}
 			userDetails.push(data);
-	userDetails.push(inf);
-	
 }
